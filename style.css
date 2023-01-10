@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+    --corAtual: #0c3675;
+    --corDone: #2d4568;
+    --imgAtual: url('imgs/noite.jpg');
+}
+
+* {
+    font-family: Verdana;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+body {
+    min-height: 100%;
+    background-image: var(--imgAtual);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#msg {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: var(--corAtual);
+    border: 2px solid var(--corAtual);
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: var(--corAtual);
+}
+
+#add-btn {
+    border: 2px solid var(--corAtual);
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+}
+
+button i {
+    pointer-events: none;
+    color: var(--corAtual);
+    font-weight: bold;
+}
+  
+button:hover > i {
+    color: #fff;
+}
+
+.remove-task:hover {
+    background-color: rgb(248, 23, 23);
+}
+
+.finish-task:hover {
+    background-color: rgb(9, 199, 9);
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+}
+
+#form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-control {
+    display: flex;
+}
+
+.todo-control input {
+    margin-right: 0.3rem;
+    box-sizing: border-box;
+    border: 2px solid var(--corAtual);
+    background: #FFF;
+    color: var(--corAtual);
+    padding: 13px;
+    font-size: 18px;
+    width: 100%;
+}
+  
+#cancel-btn {
+    margin-top: 1rem;
+    color: #444;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.task h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.task button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background: var(--corDone);
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
