@@ -18,7 +18,7 @@ function change() {
         document.documentElement.style.setProperty("--corDone", '#FEBF90')
     } else {
         document.documentElement.style.setProperty("--imgAtual", 'url(imgs/noite.jpg')
-        document.documentElement.style.setProperty("--corAtual", 'rgb(80, 173, 198)')
+        document.documentElement.style.setProperty("--corAtual", '#0c3675')
         document.documentElement.style.setProperty("--corDone", '#2d4568')
     }   
 }
